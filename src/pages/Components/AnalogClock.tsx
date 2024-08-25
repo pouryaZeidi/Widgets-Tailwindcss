@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Image from 'next/image'; // Assuming you're using Next.js
+import Image from 'next/image'; 
 
 interface AnalogClockProps {
   defaultSize?: string;
@@ -43,8 +43,8 @@ const AnalogClock: React.FC<AnalogClockProps> = ({
   }, []);
 
   return (
-    <div className={`flex items-center justify-center h-screen ${defaultTheme}`}>
-      <div className={`relative ${defaultSize} w-72 h-72 border-transparent rounded-full`}>
+    <div className={`flex items-center justify-center ${defaultTheme}`}>
+      <div className={`relative ${defaultSize} w-72 h-72 border-transparent  rounded-full`}>
         <Image
           src="/clock-without-hands.jpg" 
           alt="Clock without hands"
@@ -101,7 +101,7 @@ const AnalogClock: React.FC<AnalogClockProps> = ({
           bottom: '50%',
           left: '50%',
           transform: 'translate(-50%, 50%)',
-          zIndex: 10, // Ensure the center dot is above the image
+          zIndex: 10, 
         }} />
       </div>
     </div>
